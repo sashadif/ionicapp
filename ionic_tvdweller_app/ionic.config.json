@@ -1,12 +1,6 @@
 {
   "name": "ionic_tvdweller_app",
   "app_id": "",
-  "type": "ionic1",
-  "integrations": {
-    "gulp": {},
-    "cordova": {}
-  },
-  "watchPatterns": [
-    "scss/**/*"
-  ]
+  "type": "ionic-angular",
+  "integrations": {}
 }

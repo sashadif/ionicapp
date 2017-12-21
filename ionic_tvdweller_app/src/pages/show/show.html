@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Show
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img [src]="img" height="50%"/>
+    <ion-card-content>
+      <div display="inline-block">
+      <ion-card-title>
+        {{show?.title}}
+      </ion-card-title>
+      <button ion-fab  [class]="classAdd" (click)="addToUser(); addClass()"><ion-icon name="add"></ion-icon></button>
+       <button ion-fab [class]="classRemove" (click)="removeFromUser(); removeClass()" ><ion-icon name="remove"></ion-icon></button>
+      </div>
+      <p>{{show?.year}}</p>
+      <p>Created by: {{show?.director}}</p>
+      <p>
+        {{show?.description}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

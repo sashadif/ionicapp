@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>sign_up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-row class="sign-up-form">
+    <ion-col>
+      <ion-list inset>
+
+        <ion-item>
+          <ion-label><ion-icon name="person"></ion-icon></ion-label>
+          <ion-input [(ngModel)]="name" placeholder="name" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label><ion-icon name="mail"></ion-icon></ion-label>
+          <ion-input [(ngModel)]="email" placeholder="email" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label><ion-icon name="lock"></ion-icon></ion-label>
+          <ion-input [(ngModel)]="password" placeholder="password" type="password"></ion-input>
+        </ion-item>
+
+      </ion-list>
+
+      <button ion-button full (click)="sign_up()" color="primary" class="sign-up-button">Sign up</button>
+
+    </ion-col>
+  </ion-row>
+
+</ion-content>

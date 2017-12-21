@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Shows
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-list id="shows-list8" >
+      <ion-item class="item-icon-left" id="shows-list-item27" *ngFor="let show of allshows" (click)="goToShowPage(show.id)">
+        {{show.title}}
+        <ion-icon name="star" class="star"></ion-icon>
+      </ion-item>
+    </ion-list>
+</ion-content>
